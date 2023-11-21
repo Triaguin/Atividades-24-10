@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class ativ8 {
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+			final int TAM = 10;
+			int a[], b[]; // Declarando os vetores com o tamanho de 10
+			int j = 0, i; // J = Numero que será atualizado para a somatória
+			a = new int [TAM];
+			b = new int [TAM];
+			
+			
+			System.out.println("Vector A"); //Lendo os numeros do vetor A
+			for (i=0; i<TAM; i++) {
+				System.out.println("Apresente o "+(i+1)+" numero");
+				a[i] = ler.nextInt();
+			}
+			
+			for (i=0; i<TAM; i++) {
+				b [i] = a[i]+j; // O i de B será sempre a soma de jota
+				j = b[i]; // Atualizando o Jota
+
+		}
+			System.out.println("Somatória é: "+j);
+			ler.close();
+}
+}
