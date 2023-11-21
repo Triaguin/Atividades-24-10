@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class Ativ10 {
+	public static void main(String[] args) {
+		
+		final int TAM = 10;
+		
+		int a[], b [], c[]; //Criando os vetores
+		a = new int [TAM];
+		b = new int [TAM];
+		c = new int [TAM];
+		
+		System.out.println("Leia os valores do vetor A");
+		Scanner ler = new Scanner(System.in);
+		for (int i = 0; i < c.length; i++) {
+			a[i] = ler.nextInt();
+		}
+		System.out.println("Leia os valores do vetor B");
+		for (int i = 0; i < c.length; i++) {
+			b[i] = ler.nextInt();
+			if (a[i] != b[i]) { // Vereficando se o numero A correspondente a o numero B é diferente
+				c[i] = a[i]; // Adicionando o numero A no vetor C
+				
+			}
+		}
+		
+		System.out.print(" A = [ ");
+		for (int i = 0; i < a.length; i++) {
+			System.out.print(" "+a[i]);
+		}
+		System.out.println(" ]");
+		
+		
+		System.out.print(" B = [ ");
+		for (int i = 0; i < b.length; i++) {
+			System.out.print(" "+b[i]);
+		}
+		System.out.println(" ]");
+		
+		//Apresentar o vetor C
+		System.out.print(" C = [ ");
+		for (int i = 0; i <TAM; i++) {
+			System.out.print(" "+c[i]);
+		}
+		System.out.println(" ]");
+		
+		ler.close();
+		
+}
+}
