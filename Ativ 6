@@ -1,0 +1,24 @@
+
+public class Ativ6 {
+	public static void main(String[] args) {
+
+			final int TAM = 11;
+			int m = 1, a[];
+			a = new int [TAM];
+			
+			
+			// Escrevendo o numero para a potencia
+			for (int i=0; i<TAM; i++) {
+				a[i] = 2*m; // Mulyiplicação
+				m = a[i]; // Guardando o valor M para multiplicar o proxímo valor
+			}
+			
+			//Escrevendo os valores
+			System.out.print(" A = [ ");
+			for (int i=0; i<TAM; i++) {
+				System.out.print(a[i]+" ") ;
+		}
+			System.out.println(" ]");
+		
+}
+}
