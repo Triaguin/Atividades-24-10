@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Ativ15 {
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		//Adicionar as variaveis
+			final int TAM = 11;
+			int a[],i,C,D; // Criando o vetor; C = ordem crescente; D = ordem decresente
+			a = new int [TAM];
+			
+		//Escrever os elementos
+			System.out.println("Escreva 10 elementos");
+			for (i=1; i<TAM; i++) {
+				a[i] = ler.nextInt();
+			}
+			C = a[9]+2; // Atribuindo o limite de C; a[9]+2 para corrigir o C
+			D = a[0]; // Atribuindo o limite de D
+			
+			System.out.print("Crescente = ");
+			for (i=1; i<TAM; i++) {
+				if (a[i]<C) { //Enquato o Ai for menor do que o C (C=a[9]+2), o programa irá funcionar
+					System.out.print(a[i]+" "); //Escrevendo os numeros de forma Crescente
+				}
+					
+			}
+			
+			System.out.print("Decrescente = ");
+			for (i=10; i>0; i--) {
+				if (a[i]>D) { //Enquato o Ai for maior do que o D (D=a[0]), o programa irá funcionar
+					System.out.print(a[i]+" "); //Escrevendo os numeros de forma Decrescente
+				}
+					
+			}
+			ler.close();
+}
+}
