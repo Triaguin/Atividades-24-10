@@ -10,7 +10,8 @@ public class Ativ5 {
 			a = new int [TAM];
 			
 			// Vetor A
-			System.out.println("Vector A");
+			
+			System.out.println("digite "+TAM+" valores para o vetor A");
 			for ( int i=0; i<TAM; i++) {
 				//Ler as variáveis
 				a[i] = ler.nextInt();
